@@ -5,6 +5,7 @@ let browser: Browser;
 
 beforeAll(async () => {
     browser = await puppeteer.launch({
+        browser: 'firefox',
         headless: true,
         args: ['--no-sandbox'],
     });
